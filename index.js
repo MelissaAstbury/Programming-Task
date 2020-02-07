@@ -34,11 +34,11 @@ let housePets = [
 
 // console.log(housePets);
 // console.log(housePets);
-console.log("---------------------------------------------");
+//console.log("---------------------------------------------");
 
 housePets.forEach(pets => {
   if (pets.age < 7) {
-    console.log((pets.name += " je"));
+    //console.log((pets.name += " je"));
   }
 });
 
@@ -52,7 +52,7 @@ let filteredItems = housePets.filter(pet => {
   }
 });
 
-console.log("filteredItems: ", filteredItems);
+//console.log("filteredItems: ", filteredItems);
 
 // Remove item from array
 //console.log(animals, arr, zooAnimals);
@@ -64,3 +64,45 @@ let myArray = [];
 // Object
 
 let myObject = {};
+
+//////////////////////////////////
+/////////// DAY TWO //////////////
+//////////////////////////////////
+
+let weather = "Today the weather is";
+//console.log(weather);
+
+let weatherTypes = ["sunny", "windy", "rainy"];
+//console.log(weatherTypes);
+
+let weatherObject = {
+  type: "Sunny",
+  temp: "hot",
+  place: "Spain"
+}
+
+weatherTypes.forEach((i) => {
+  let anwers = i;
+  anwers += " day";
+  // console.log(anwers);
+});
+
+let typeOfWeather = [
+  {
+    name: "hot",
+    items: ["sunglasses", "suncream", "ice"],
+    month: "July"
+  },
+  {
+    name: "cold",
+    items: ["hat", "gloves", "scarf"],
+    month: "January"
+  }
+];
+
+typeOfWeather.forEach((i) => {
+  console.log(i.items[2]);
+})
+
+
+
